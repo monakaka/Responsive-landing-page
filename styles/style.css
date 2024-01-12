@@ -9,6 +9,20 @@
     padding: 0;
 }
 
+/* common styles are here  */
+.primary-button {
+    color: #FFF;
+    border: 0;
+    border-radius: 8px;
+    background: #FF900E;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 /* header section styles are started from here  */
 header {
     padding: 20px 16% 0;
@@ -24,7 +38,8 @@ header {
 
 .nav-title {
     color: #131313;
-    font-size: 45px;
+    text-align: center;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 
@@ -37,7 +52,7 @@ header {
     list-style: none;
     margin-right: 30px;
     color: #424242;
-    font-size: 18px;
+    font-size: 1.12rem;
     font-weight: 500;
     line-height: 26px;
 }
@@ -47,3 +62,91 @@ header {
 }
 
 /* banner related style  */
+.banner {
+    margin-top: 116px;
+}
+
+.banner .banner-info {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner .banner-info .banner-title {
+    color: #131313;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner .banner-info .banner-description {
+    color: #727272;
+    text-align: center;
+    line-height: 26px;
+}
+
+.banner>img {
+    width: 100%;
+}
+
+
+
+
+
+/* media queary for responsive style here  */
+
+/* for small devices  */
+
+@media screen and (max-width: 576px) {
+
+    /* header part  */
+    header {
+        padding: 5%;
+    }
+
+    /* nav part  */
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-li-container {
+        justify-content: space-around;
+    }
+
+    .nav-container .nav-li-container>li {
+        margin: 0;
+    }
+
+    /* banner part  */
+    .banner .banner-info {
+        width: 100%;
+    }
+}
+
+/* for medium devices  */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    /* header part  */
+    header {
+        padding: 5%;
+    }
+
+    /* nav part  */
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .nav-li-container {
+        justify-content: space-around;
+    }
+
+    .nav-container .nav-li-container>li {
+        margin: 0;
+    }
+
+    /* banner part  */
+    .banner .banner-info {
+        width: 100%;
+    }
+}
